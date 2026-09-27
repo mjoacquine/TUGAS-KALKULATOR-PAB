@@ -12,13 +12,13 @@ void main() async {
 
   while (ulang) {
     try {
-      // 1. Input Bilangan Pertama
+      //Input Bilangan 
       double bil1 = readDoubleInput('Masukkan bilangan pertama: ');
 
-      // 2. Input Bilangan Kedua
+     
       double bil2 = readDoubleInput('Masukkan bilangan kedua: ');
 
-      // 3. Menampilkan Menu Pilihan Operasi
+      // Pilihan Operasi
       print('\nPilih Operasi Matematika:');
       print('[1] Tambah');
       print('[2] Kurang');
@@ -30,7 +30,7 @@ void main() async {
 
       double hasil = 0;
 
-      // Simulasi proses perhitungan
+   
       await Future.delayed(Duration(milliseconds: 300)); 
 
       switch (pilihan) {
@@ -59,7 +59,7 @@ void main() async {
       print('\n[Terjadi Kesalahan]: ${e.toString()}');
     }
 
-    // 4. Konfirmasi Mengulang
+    // Konfirmasi Mengulang
     print('\n----------------------------------------');
     stdout.write('Apakah Anda ingin melakukan perhitungan lagi? (Y/T): ');
     String? jawaban = stdin.readLineSync()?.trim().toUpperCase();
